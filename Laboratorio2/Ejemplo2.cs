@@ -16,6 +16,7 @@ namespace Laboratorio2
         public class MyClass
         {
             public static int Valor;
+
         }
     }
 }
