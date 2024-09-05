@@ -2,7 +2,7 @@
 {
     public class CalculosMatematicos
     {
-        public const double PI = 3.14159;
+        public const double PI = Math.PI;
         public int Resultado(int numero1, int numero2)
         {
             return (numero1 + numero2) * (numero1 - numero2);

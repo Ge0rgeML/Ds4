@@ -2,7 +2,7 @@
 {
     public class CalculosMatematicos
     {
-        public const double PI = 3.14159;
+        public const double PI = Math.PI;
         public int Resultado(int numero1, int numero2)
         {
             return (numero1 + numero2) * (numero1 - numero2);
@@ -20,11 +20,11 @@
     {
         double radio;
 
-    Console.WriteLine("ingrese el radio de su circulo para saber el area: ");
+        Console.WriteLine("ingrese el radio de su circulo para saber el area: ");
         radio = Convert.ToInt32(Console.ReadLine());
 
         CalculosMatematicos calmat = new CalculosMatematicos();
-    double resultado = calmat.AreaC(radio);
-    Console.WriteLine($"El area del circulo con radio de {radio} es: {resultado} ");
+        double resultado = calmat.AreaC(radio);
+        Console.WriteLine($"El area del circulo con radio de {radio} es: {resultado} ");
     }
 }
