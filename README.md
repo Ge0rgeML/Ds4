@@ -1,1 +1,1 @@
-Este es un Laboratorio de prueba de VS para crear repositorio remoto, commits, pull y push.
+Este es un repositorio de la clase DS4.
