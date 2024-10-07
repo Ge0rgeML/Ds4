@@ -49,45 +49,47 @@
             label1.AutoSize = true;
             label1.Location = new Point(252, 73);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(161, 15);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "ingresa la longitud del aldo A";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(252, 112);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(160, 15);
             label2.TabIndex = 1;
-            label2.Text = "label2";
+            label2.Text = "ingresa la longitud del aldo B";
+            label2.Click += label2_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(252, 154);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(161, 15);
             label3.TabIndex = 2;
-            label3.Text = "label3";
+            label3.Text = "ingresa la longitud del aldo C";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Location = new Point(252, 244);
             label4.Name = "label4";
-            label4.Size = new Size(38, 15);
+            label4.Size = new Size(134, 15);
             label4.TabIndex = 3;
-            label4.Text = "label4";
+            label4.Text = "Calcular Semiperimetro:";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Location = new Point(252, 279);
             label5.Name = "label5";
-            label5.Size = new Size(38, 15);
+            label5.Size = new Size(83, 15);
             label5.TabIndex = 4;
-            label5.Text = "label5";
+            label5.Text = "Area Tringulo: ";
             // 
             // textBox1
             // 
@@ -128,37 +130,41 @@
             // 
             button1.Location = new Point(252, 201);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(93, 23);
             button1.TabIndex = 10;
-            button1.Text = "button1";
+            button1.Text = "semiperimetro";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(333, 201);
+            button2.Location = new Point(351, 201);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(64, 23);
             button2.TabIndex = 11;
-            button2.Text = "button2";
+            button2.Text = "area";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(414, 201);
+            button3.Location = new Point(421, 201);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 12;
-            button3.Text = "button3";
+            button3.Text = "limpiar";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
-            button4.Location = new Point(495, 201);
+            button4.Location = new Point(502, 201);
             button4.Name = "button4";
-            button4.Size = new Size(75, 23);
+            button4.Size = new Size(68, 23);
             button4.TabIndex = 13;
-            button4.Text = "button4";
+            button4.Text = "salir";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // Form1
             // 

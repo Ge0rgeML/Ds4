@@ -28,55 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lb_titulo = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            btn_prom = new Button();
+            btn_reset = new Button();
+            btn_salir = new Button();
             label5 = new Label();
             textBox4 = new TextBox();
             SuspendLayout();
             // 
-            // label1
+            // lb_titulo
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(362, 75);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            lb_titulo.AutoSize = true;
+            lb_titulo.Location = new Point(362, 75);
+            lb_titulo.Name = "lb_titulo";
+            lb_titulo.Size = new Size(88, 15);
+            lb_titulo.TabIndex = 0;
+            lb_titulo.Text = "Nota Promedio";
+            lb_titulo.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(268, 116);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(61, 15);
             label2.TabIndex = 1;
-            label2.Text = "label2";
+            label2.Text = "Nota No.1";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(268, 156);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(61, 15);
             label3.TabIndex = 2;
-            label3.Text = "label3";
+            label3.Text = "Nota No.2";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Location = new Point(268, 197);
             label4.Name = "label4";
-            label4.Size = new Size(38, 15);
+            label4.Size = new Size(61, 15);
             label4.TabIndex = 3;
-            label4.Text = "label4";
+            label4.Text = "Nota No.3";
+            label4.Click += label4_Click;
             // 
             // textBox1
             // 
@@ -99,41 +101,44 @@
             textBox3.Size = new Size(100, 23);
             textBox3.TabIndex = 6;
             // 
-            // button1
+            // btn_prom
             // 
-            button1.Location = new Point(268, 255);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 7;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btn_prom.Location = new Point(268, 255);
+            btn_prom.Name = "btn_prom";
+            btn_prom.Size = new Size(75, 23);
+            btn_prom.TabIndex = 7;
+            btn_prom.Text = "Promedio";
+            btn_prom.UseVisualStyleBackColor = true;
+            btn_prom.Click += btn_prom_Click;
             // 
-            // button2
+            // btn_reset
             // 
-            button2.Location = new Point(349, 255);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 8;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btn_reset.Location = new Point(349, 255);
+            btn_reset.Name = "btn_reset";
+            btn_reset.Size = new Size(75, 23);
+            btn_reset.TabIndex = 8;
+            btn_reset.Text = "Reset";
+            btn_reset.UseVisualStyleBackColor = true;
+            btn_reset.Click += btn_reset_Click;
             // 
-            // button3
+            // btn_salir
             // 
-            button3.Location = new Point(430, 255);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 9;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            btn_salir.Location = new Point(430, 255);
+            btn_salir.Name = "btn_salir";
+            btn_salir.Size = new Size(75, 23);
+            btn_salir.TabIndex = 9;
+            btn_salir.Text = "Salir";
+            btn_salir.UseVisualStyleBackColor = true;
+            btn_salir.Click += button3_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Location = new Point(268, 318);
             label5.Name = "label5";
-            label5.Size = new Size(38, 15);
+            label5.Size = new Size(91, 15);
             label5.TabIndex = 10;
-            label5.Text = "label5";
+            label5.Text = "Nota Promedio:";
             // 
             // textBox4
             // 
@@ -149,16 +154,16 @@
             ClientSize = new Size(800, 450);
             Controls.Add(textBox4);
             Controls.Add(label5);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btn_salir);
+            Controls.Add(btn_reset);
+            Controls.Add(btn_prom);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(lb_titulo);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -167,16 +172,16 @@
 
         #endregion
 
-        private Label label1;
+        private Label lb_titulo;
         private Label label2;
         private Label label3;
         private Label label4;
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button btn_prom;
+        private Button btn_reset;
+        private Button btn_salir;
         private Label label5;
         private TextBox textBox4;
     }
